@@ -1,0 +1,97 @@
+:root{
+    --inputColor: hsl(330,12%,97%);
+    --greyText: hsl(190,190,190);
+    --blackColor: hsl(0,0%,19%);
+    --textColor: hsl(240,1%,48%);
+    --bgColor: hsl(220,10%,94%);
+    --whiteColor: hsl(0,0%,100%);
+  
+  
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+  }
+
+
+  .topSection{
+    .headerSection{
+        justify-content: space-between;
+        .title{
+            h1{
+                font-size: var(--h1FontSize);
+                color: var(--blackColor);
+                font-weight: 700;
+    
+            }
+            p{
+                font-size: var(--normalFontSize);
+                color: var(--textColor);
+                font-weight: 500;
+            }
+        }
+        .searchBar{
+            padding: 1rem 2rem ;
+            background: var(--whiteColor);
+            border-radius: 5px;
+            gap: 1rem;
+            box-shadow: 0 2px 4px var(--inputColor);
+
+            input{
+                border: none;
+                outline: none;
+                background: none;
+            }
+            .icon{
+                color: var(--textColor);
+                &:hover{
+                    color: var(--inputColor);
+                }
+            }
+        }
+
+        .adminDiv{
+            gap: 1rem;
+            .icon{
+                font-size: var(--biggestFontSize);
+                background: var(--whiteColor);
+                border-radius: 5px;
+                padding: 5px;
+                box-shadow: 0 2px 4px var(--inputColor);
+                color: var(--textColor);
+            }
+
+
+        }
+    }
+
+    .cardSection{
+        margin-top: 3rem;
+        gap: 1rem;
+
+        
+    }
+  }
+
+@media screen and (max-width: 990px){
+    .cardSection{
+        flex-direction: column;
+        
+    }
+}
+
+@media screen and (max-width: 990px){
+    .headerSection{
+        .searchBar{
+            display: none;
+        }
+        
+    }
+}
+
+
+
+
